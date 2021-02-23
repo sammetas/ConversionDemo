@@ -1,0 +1,19 @@
+spring:
+  application:
+     name: convert-uat
+
+
+
+server:
+  port: 8086
+  #ssl:
+   # key-alias: selfsigned_localhost_sslserver
+   # key-password: changeit
+   # key-store: D:\ProjectB\ConversionDemo\src\main\resources\ssl-server.jks
+   # key-store-provider: SUN
+    #key-store-type: JKS
+
+management.endpoints.web.exposure.include: "*"
+
+zebpayapp: http://localhost:8084/zebpay/ticker/
+bitkub: https://localhost:8082/bitkub/ticker/
