@@ -21,7 +21,7 @@ public class ConvertCalc {
         HashMap<String,Coin> bmap= new HashMap<>();
         System.out.println("beforebitkub");
         ObjectMapper mapper = new ObjectMapper();
-        String resp=restTemplate.getForObject("http://localhost:8082/bitkub/ticker/"+ConvertConstants.THB_+coin,String.class);
+        String resp=restTemplate.getForObject("http://BITKUB-UAT-DEV/bitkub/ticker/"+ConvertConstants.THB_+coin,String.class);
         try {
             bmap=mapper.readValue(resp,
                     new TypeReference<HashMap<String,Coin>>(){});
@@ -36,7 +36,7 @@ public class ConvertCalc {
         HashMap<String,Coin> zmap= new HashMap<>();
         ObjectMapper mapper = new ObjectMapper();
         System.out.println("beforezebpay");
-        String resp= restTemplate.getForObject("http://localhost:8084/zebpay/ticker/"+coin+"-"+ConvertConstants.INR,String.class);
+        String resp= restTemplate.getForObject("http://ZEBPAY-UAT/zebpay/ticker/"+coin+"-"+ConvertConstants.INR,String.class);
         try {
             zmap=mapper.readValue(resp,
                     new TypeReference<HashMap<String,Coin>>(){});

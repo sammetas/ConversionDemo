@@ -6,12 +6,12 @@
 	<div>
 		<div>
 			<h1>Result page</h1>
-			<h2>Hello ${message}</h2>
+			<h2> </h2>
 
 			 <c:forEach items="${listMap}" var="xchangeRate">
-                         ${xchangeRate.key} ${xchangeRate.value}
+                         ${xchangeRate.key} :  <b>${xchangeRate.value}</b>
                    </c:forEach>
-			<br><br>
+			<br><br><br>
 			Click on this <strong><a href="/">link</a></strong> to visit previous page.
 		</div>
 	</div>
