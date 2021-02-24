@@ -52,7 +52,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+	<!--	<dependency>
 			<groupId>com.sun.jersey</groupId>
 			<artifactId>jersey-servlet</artifactId>
 			<version>${jersey1.version}</version>
@@ -89,7 +89,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+-->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
